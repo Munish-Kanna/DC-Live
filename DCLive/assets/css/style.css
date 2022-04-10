@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Poppins, 'sans-serif';
+    scroll-behavior: smooth;
+    transition-duration: 0.8s;
+}
+body a{
+    color: white;
+    text-decoration: none;
+}
+
+/* media Queries*/
+
+@media screen and (max-width : 991px) {
+
+    nav .btn{
+        margin-top: 10px;
+    }
+    
+    section .rqr, .nextLeader, .dcCareer{
+        margin-top: 40px;
+    }
+    section .desiSinger, .dTouch, .dcAngels{
+        margin-top: 40px;
+    }
+
+    footer .smallDevice{
+        padding-top: 20px;
+    }
+    
+    footer h3, p{
+        text-align: center;
+    }
+}
+
+
+
+
+/*Navigation Bar*/
+nav .nav-link{
+    color: black;
+    font-weight: 500;
+}
+
+nav .nav-link:hover{
+    background-color: rgb(0, 0, 0);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: white; 
+}
+
+nav .btn{
+    border-radius: 20px;
+}
+
+nav .btn a:hover{
+    color: white;
+}
+
+/*End of Navigation Bar*/
+
+/*Carousel*/
+
+.carousel-caption{
+    animation-name: textColor;
+    animation-duration: 8s;
+  }
+  
+  @keyframes textColor {
+    0%   {color: white;}
+    25%  {color: red;}
+    50%  {color: yellow;}
+    100% {color: green;}
+}
+
+/*End of Carousel*/
+
+/*Up Coming Events Section*/
+section .card{
+    transition: transform .5s;
+}
+
+section .card .btn:hover{
+    transform: scale(1.1);
+
+}
+section .card:hover{
+    transform: scale(1.1);
+} 
+
+section .dcCareer, .dTouch, .dcAngels{
+    margin-top: 40px;
+}
+
+
+
